@@ -23,9 +23,6 @@
 - Filters packets based on protocol types.
 - Displays a clean and readable summary of packet information.
 
-### 💾 **Data Logging**
-- Logs captured packet details into a file for further analysis.
-
 ### ⚙️ **Customizable Configuration**
 - Provides options to:
   - Modify filter criteria (e.g., capture only TCP packets).
@@ -37,8 +34,10 @@
 
 This project requires the following Python modules:
 - **scapy**: For packet capturing and analysis.
-- **argparse**: For command-line argument parsing.
-- **time**: For timestamping captured packets.
+- **tkinter**: For providing gui.
+- **matplotlib**: For visualizing the data through graphs.
+- **psutils**: For monitoring the packets.
+- **collection**: For counting the packets
 
 ---
 
@@ -79,8 +78,6 @@ To enable packet capturing on Windows, install [Npcap](https://nmap.org/npcap/):
    sudo python Network-Packet-Analyzer.py
    ```
    **Note:** Use `sudo` on Linux or run as Administrator on Windows for required permissions.
-
-4. 📄 View the logged packets in the output file (if logging is enabled).
 
 ---
 
